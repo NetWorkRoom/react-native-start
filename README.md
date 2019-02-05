@@ -36,13 +36,14 @@ react-native run-android
 react-native run-ios
 ```
 
-6.) Установить [react-devtools]
+6.) Установить [react-devtools] 
 ```
 yarn global add react-devtools
 // start
 react-devtools
 // если не работает сразу
 adb reverse tcp:8097 tcp:8097
+// Запуск соединения в эмкуляторе Ctrl + M
 ```
 
 [Node.js]: https://nodejs.org/en/
