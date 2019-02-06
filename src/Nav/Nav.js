@@ -10,7 +10,7 @@ const Nav = (props) => (
     </View>
 );
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
     nav: {
         backgroundColor: '#eaeaea',

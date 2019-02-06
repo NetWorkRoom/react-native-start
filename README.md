@@ -19,7 +19,7 @@ const Nav = (props) => (
     </View>
 );
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
     nav: {
         backgroundColor: '#eaeaea',
@@ -57,7 +57,7 @@ const Generate = (props) => (
     </TouchableWithoutFeedback>
 );
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
     generate: {
         alignItems: 'center',
@@ -101,7 +101,7 @@ const ListItem = (props) => {
     )
 };
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
     listitem: {
         backgroundColor: '#cecece',
@@ -137,7 +137,6 @@ class App extends Component {
 
   // Метод генерирует случаное новое значение и добавляет в state
   onAddRandom = () => {
-    // alert('add random')
     // Генерируем новое значение
     let random = Math.floor(Math.random() * 100) + 1;
     // Добвляем в массив random в state новое значение
@@ -148,7 +147,7 @@ class App extends Component {
     });
   };
 
-  // Метод удаляет выбраное значениев массиве random
+  // Метод удаляет выбраное значение в массиве random
   onItemDelete = (i) => {
     // Создаем новый массив в котором нет удаляемого значения
     let newArray = this.state.random.filter((item, index) => {
@@ -158,7 +157,7 @@ class App extends Component {
     this.setState({random: newArray});
   };
 
-  // Отправляем на редер компонеты
+  // Отправляем на рендер компонеты
   render() {
     return (
       <View style={styles.container}>
@@ -178,7 +177,7 @@ class App extends Component {
   }
 }
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
   container: {
     flex: 1,

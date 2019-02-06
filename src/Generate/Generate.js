@@ -23,7 +23,7 @@ const Generate = (props) => (
     </TouchableWithoutFeedback>
 );
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
     generate: {
         alignItems: 'center',

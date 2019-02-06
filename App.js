@@ -28,7 +28,7 @@ class App extends Component {
     });
   };
 
-  // Метод удаляет выбраное значениев массиве random
+  // Метод удаляет выбраное значение в массиве random
   onItemDelete = (i) => {
     // alert('delete item');
     // alert(i);
@@ -40,7 +40,7 @@ class App extends Component {
     this.setState({random: newArray});
   };
 
-  // Отправляем на редер компонеты
+  // Отправляем на рендер компонеты
   render() {
     return (
       <View style={styles.container}>
@@ -60,7 +60,7 @@ class App extends Component {
   }
 }
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
   container: {
     flex: 1,

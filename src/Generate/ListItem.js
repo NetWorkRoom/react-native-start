@@ -24,7 +24,7 @@ const ListItem = (props) => {
     )
 };
 
-// Создаем описание стилей оформления для елементов в приложении
+// Создаем описание стилей оформления для элементов в приложении
 const styles = StyleSheet.create({
     listitem: {
         backgroundColor: '#cecece',
