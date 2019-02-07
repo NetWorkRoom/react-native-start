@@ -7,7 +7,8 @@
 3.) [Первое приложение].     
 4.) [Пример использования StyleSheet].     
 5.) [Компонеты].     
-5.) [TextInput и Button].     
+6.) [TextInput и Button].     
+7.) [ScrollView, Picker, ActivityIndicator и Slider].     
 
 [Установка React Native]: https://github.com/NetWorkRoom/react-native-start/tree/install
 [React Native]: https://facebook.github.io/react-native/
@@ -16,3 +17,4 @@
 [Пример использования StyleSheet]: https://github.com/NetWorkRoom/react-native-start/tree/styles 
 [Компонеты]: https://github.com/NetWorkRoom/react-native-start/tree/components
 [TextInput и Button]: https://github.com/NetWorkRoom/react-native-start/tree/form
+[ScrollView, Picker, ActivityIndicator и Slider]: https://github.com/NetWorkRoom/react-native-start/tree/scroll   
