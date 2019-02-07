@@ -1,19 +1,21 @@
 // Подключаем модули React и React Native
 import React, {Component} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, ScrollView, ActivityIndicator} from 'react-native';
 
 // Подключаем компоненты
 import Nav from './src/Nav/Nav';
 import Generate from './src/Generate/Generate';
 import ListItem from './src/Generate/ListItem';
 import Input from './src/Input/Input';
+import PickerComponent from './src/Picker/Picker';
 
 // Инициализируем класс App
 class App extends Component {
   // Инициализируем state с полями - nameOfApp, random
   state = {
     nameOfApp: 'My awesome App', // Название приложения
-    random: [20, 14] // Массив чисел
+    random: [20, 14], // Массив чисел
+    loading: false
   };
 
   // Метод генерирует случаное новое значение и добавляет в state
@@ -48,16 +50,37 @@ class App extends Component {
           {/* Подключаем компонент Nav и передаем
           в него название приложения из state */}
           <Nav nameOfApp={this.state.nameOfApp}/>
-          {/* Подключаем компонент Generate и передаем
-          в него метод onAddRandom */}
-          <Generate add={this.onAddRandom} />
-          {/* Подключаем компонент ListItem и передаем в него
-          метод onItemDelete и массив с числами random */}
-          <ListItem
-              delete={this.onItemDelete}
-              items={this.state.random} />
+          {/* Оборачиваем контент ScrollView для получения
+          возможности скролить контент на странице */}
+          <ScrollView
+              // onContentSizeChange={(w,h) => alert(h)} // Срабатывает при изменении размера
+              // onMomentumScrollBegin={() => alert('begin')} // Срабатывает при начале скролинга
+              // onMomentumScrollEnd={() => alert('end')} // Срабатывает после окончания скролинга
+              onScroll={() => alert('scrolling')}
+              style={{width: '100%'}}
+          >
+            <View style={styles.wrapper}>
+                {/* Подключаем компонент Generate и передаем
+                в него метод onAddRandom */}
+                <Generate add={this.onAddRandom} />
+                {/* Подключаем компонент ListItem и передаем в него
+                метод onItemDelete и массив с числами random */}
+                <ListItem
+                    delete={this.onItemDelete}
+                    items={this.state.random} />
 
-          <Input/>
+                {/*<Input/>*/}
+
+                <PickerComponent />
+
+                <ActivityIndicator
+                  size="large"
+                  color="red"
+                  animating={this.state.loading}
+                />
+
+            </View>
+          </ScrollView>
       </View>
     );
   }
@@ -71,6 +94,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#f5fcff',
   },
+  wrapper: {
+    flex:1,
+    width: '100%',
+    padding: 20,
+    justifyContent: 'flex-start',
+    alignItems: 'center'
+  }
 });
 
 // Экспортируем класс App

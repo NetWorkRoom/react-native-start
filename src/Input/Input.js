@@ -53,7 +53,6 @@ class Input extends Component {
                     }
                 </View>
             </View>
-
         );
     }
 }
