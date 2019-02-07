@@ -6,6 +6,7 @@ import {StyleSheet, View} from 'react-native';
 import Nav from './src/Nav/Nav';
 import Generate from './src/Generate/Generate';
 import ListItem from './src/Generate/ListItem';
+import Input from './src/Input/Input';
 
 // Инициализируем класс App
 class App extends Component {
@@ -55,6 +56,8 @@ class App extends Component {
           <ListItem
               delete={this.onItemDelete}
               items={this.state.random} />
+
+          <Input/>
       </View>
     );
   }

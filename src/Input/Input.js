@@ -1,13 +1,3 @@
-## Создание мобильных приложений на основе [React Native]
-Полезная информация для создания приложений на основе React Native
-
-#### Первое приложение projectOne
-
-##### TextInput и Button
-Пример с использованием элементов из React Native - TextInput и Button
-
-Файл Input.js
-```javascript
 // Подключаем модули React и React Native
 import React, { Component } from 'react';
 import {StyleSheet, TextInput, Button, Text, View} from 'react-native';
@@ -97,6 +87,3 @@ const styles = StyleSheet.create({
 
 // Экспортируем компонент Input
 export default Input;
-```
-
-[React Native]: https://facebook.github.io/react-native/
