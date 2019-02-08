@@ -9,6 +9,7 @@
 5.) [Компонеты].     
 6.) [TextInput и Button].     
 7.) [ScrollView, Picker, ActivityIndicator и Slider].     
+8.) [Image и Modal].     
 
 [Установка React Native]: https://github.com/NetWorkRoom/react-native-start/tree/install
 [React Native]: https://facebook.github.io/react-native/
@@ -18,3 +19,4 @@
 [Компонеты]: https://github.com/NetWorkRoom/react-native-start/tree/components
 [TextInput и Button]: https://github.com/NetWorkRoom/react-native-start/tree/form
 [ScrollView, Picker, ActivityIndicator и Slider]: https://github.com/NetWorkRoom/react-native-start/tree/scroll   
+[Image и Modal]: https://github.com/NetWorkRoom/react-native-start/tree/image
