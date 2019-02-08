@@ -1,21 +1,19 @@
 {
-  "name": "projectOne",
+  "name": "projectTwo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "concurrently \"react-native run-android\"  \"react-devtools\"",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.6.3",
-    "react-native": "0.58.3"
+    "react-native": "0.58.4"
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "24.0.0",
-    "concurrently": "^4.1.0",
-    "jest": "24.0.0",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
     "metro-react-native-babel-preset": "0.51.1",
     "react-test-renderer": "16.6.3"
   },
