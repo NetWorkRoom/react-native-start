@@ -9,6 +9,18 @@ const AppNavigator = createStackNavigator(
       Home: HomeComponent,
       Profile: ProfileComponent
     },
+    {
+      initialRouteName: 'Home',
+      defaultNavigationOptions: {
+         headerStyle: {
+            backgroundColor: '#f4511e',
+         },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+            fontWeight: 'normal',
+         },
+      },
+    }
 );
 
 const App = createAppContainer(AppNavigator);
