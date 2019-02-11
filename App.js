@@ -1,16 +1,27 @@
-import React from 'react';
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import React, {Component} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 
-import HomeComponent from './src/Home'
-import ProfileComponent from './src/Profile'
+export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Hello World!</Text>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+      </View>
+    );
+  }
+}
 
-const AppNavigator = createStackNavigator(
-    {
-      Home: HomeComponent,
-      Profile: ProfileComponent
-    },
-);
-
-const App = createAppContainer(AppNavigator);
-
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+});
